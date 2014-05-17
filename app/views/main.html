@@ -11,6 +11,31 @@
       <div class="pull-right">{{ item.value }}</div>
     </div>
   </div>
+  <form class="form-inline" role="form" novalidate>
+    <div class="row">
+      <div class="form-group">
+        <label class="sr-only" for="item-name">Your item</label>
+        <input
+          class="form-control"
+          id="item-name"
+          name="item-name"
+          placeholder="Your item" />
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="item-price">Price</label>
+        <input
+          class="form-control"
+          id="item-price"
+          name="item-price"
+          placeholder="Price" />
+      </div>
+    </div>
+    <div class="row">
+      <button
+        class="btn btn-primary pull-right"
+        type="submit">Save</button>
+    </div>
+  </form>
 </div>
 
 <div class="footer">
