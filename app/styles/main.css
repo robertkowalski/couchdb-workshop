@@ -77,3 +77,7 @@ body {
     border-bottom: 0;
   }
 }
+
+.list {
+  padding-bottom: 19px;
+}

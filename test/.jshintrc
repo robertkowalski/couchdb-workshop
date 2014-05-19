@@ -3,7 +3,6 @@
   "browser": true,
   "esnext": true,
   "bitwise": true,
-  "camelcase": true,
   "curly": true,
   "eqeqeq": true,
   "immed": true,
@@ -29,8 +28,9 @@
     "expect": false,
     "inject": false,
     "it": false,
-    "jasmine": false,
-    "spyOn": false
+    "spyOn": false,
+    "angular": false,
+    "assert": false
   }
 }
 
