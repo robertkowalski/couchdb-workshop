@@ -11,7 +11,7 @@
       <div class="pull-right">{{ item.value }}</div>
     </div>
   </div>
-  <form class="form-inline" role="form" novalidate ng-submit="processForm()">
+  <form class="form-inline" role="form" novalidate ng-submit="processForm()" name="form">
     <div class="row">
       <div class="form-group">
         <label class="sr-only" for="item-name">Your item</label>
@@ -20,7 +20,9 @@
           ng-model="name"
           id="item-name"
           name="item-name"
-          placeholder="Your item" />
+          placeholder="Your item"
+          required
+          />
       </div>
       <div class="form-group">
         <label class="sr-only" for="item-price">Price</label>
@@ -29,7 +31,9 @@
           ng-model="price"
           id="item-price"
           name="item-price"
-          placeholder="Price" />
+          placeholder="Price"
+          required
+          ng-pattern="/\d+\.\d\d$/"/>
       </div>
     </div>
     <div class="status">
@@ -38,7 +42,8 @@
     <div class="row">
       <button
         class="btn btn-primary pull-right"
-        type="submit">Save</button>
+        type="submit"
+        ng-disabled="form.$invalid">Save</button>
     </div>
   </form>
 </div>
