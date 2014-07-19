@@ -5,8 +5,12 @@
 </div>
 
 <div class="content">
-  <div>{{ items[0].key }}</div>
-  <div>{{ items[0].value }}</div>
+  <div ng-repeat="item in items">
+    <div class="clearfix">
+      <div class="pull-left">{{ item.key }}</div>
+      <div class="pull-right">{{ item.value }}</div>
+    </div>
+  </div>
 </div>
 
 <div class="footer">
